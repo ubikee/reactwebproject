@@ -15,8 +15,7 @@ module.exports = function setKarmaConfig(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [fileGlob],
-
+    files: ['src/js/**/*.test.js'],
 
     // list of files to exclude
     exclude: [
@@ -26,7 +25,7 @@ module.exports = function setKarmaConfig(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      [fileGlob]: ['webpack']
+      ['src/js/**/*.test.js']: ['webpack']
     },
     webpack: webpackConfig,
     webpackMiddleware: { noInfo: true },
