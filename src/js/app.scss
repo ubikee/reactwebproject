@@ -1,12 +1,18 @@
+@import './fonts.scss';
 @import './palette.scss';
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import './styles.scss';
 
 html {
   font-size:62.5%;
   box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   background-color: $default-primary-bgcolor;
   color: $primary-text-color;
   font-size: 1.4rem;
@@ -15,5 +21,19 @@ body {
 }
 
 .app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 
+.dev {
+  border: dashed 1px red;
+  padding: 2px;
+  overflow-x: auto;
+
+  .page {
+    min-width : 400px;
+    border: solid 1px $dark-transparent-bgcolor;
+    margin-right: 1px;
+  }
 }

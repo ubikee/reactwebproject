@@ -1,0 +1,29 @@
+@import '../app.scss';
+
+.header {
+  display: flex;
+  background-color: $dark-primary-bgcolor;
+  color: $text-primary-color;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: .5rem;
+
+  &.float {
+    position: absolute;
+    width: inherit;
+    min-width: inherit;
+  }
+
+  .title {
+    flex: 1;
+    line-height: 4.1rem;
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  nav {
+    display: flex;
+  }
+}

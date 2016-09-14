@@ -1,0 +1,22 @@
+@import '../app.scss';
+
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  article {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &.splash {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $light-primary-bgcolor;
+    }
+  }
+
+}

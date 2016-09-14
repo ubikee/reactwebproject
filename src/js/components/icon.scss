@@ -1,0 +1,13 @@
+@import '../styles.scss';
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  padding: .7rem;
+  margin: .1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $translucent;
+  }
+}

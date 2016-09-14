@@ -1,0 +1,14 @@
+@import '../app.scss';
+
+.panel {
+  border: solid 1px $divider-color;
+  border-radius: 1px;
+  overflow: hidden;
+
+  section {
+    min-width: 20rem;
+    min-height: 15rem;
+    padding: 1rem;
+    background-color: $default-primary-bgcolor;
+  }
+}

@@ -1,0 +1,79 @@
+@import "./palette.scss";
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+$translucent: rgba(100,100,100,.5);
+.translucent {
+  background-color: $translucent !important;
+}
+
+label {
+  //position: absolute;
+  //top: 0.25rem;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #b3b3b3;
+  font-size: 1.2rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+
+input {
+  display: block;
+  background: #FFF;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1.4rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 2;
+  width: 100%;
+  color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+}
+
+.bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #999;
+  display: block;
+}
+
+button {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.2rem;
+  color: $accent-bgcolor;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  margin: 1px;
+  outline: none;
+  span {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover{
+    color: $accent-bgcolor-hover;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  }
+}
